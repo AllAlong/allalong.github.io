@@ -9,5 +9,8 @@ angular.module(app.id, ['ngRoute']).config(function($routeProvider) {
   .when('/members', {
     templateUrl: 'views/members.html'
   })
+  .when('/battles', {
+    templateUrl: 'views/battles.html'
+  })
   .otherwise('/404');
 });

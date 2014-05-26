@@ -1,0 +1,41 @@
+<div ng-controller="battlesController" class="battles">
+  <div ng-repeat="battle in battles" class="battle">
+    <p class="battle--date">
+      {{ battle.date }}
+    </p>
+    <table>
+      <thead>
+        <td>
+          Team n°&nbsp;<div class="sort-a"  ng-click="predicate='team'; reverse=true"></div><div class="sort-d" ng-click="predicate='team'; reverse=false"></div>
+        </td>
+        <td>
+          Warrior&nbsp;<div class="sort-a"  ng-click="predicate='name'; reverse=true"></div><div class="sort-d" ng-click="predicate='name'; reverse=false"></div>
+        </td>
+        <td>
+          Legendary count&nbsp;<div class="sort-a"  ng-click="predicate='count'; reverse=true"></div><div class="sort-d" ng-click="predicate='count'; reverse=false"></div>
+        </td>
+      </thead>
+      <tr ng-repeat="warrior in battle.warriors | orderBy:predicate:reverse" class="battle--warriors">
+        <td>
+          {{ warrior.team }}
+        </td>
+        <td>
+          {{ warrior.name }}
+        </td>
+        <td>
+          {{ warrior.count }}
+        </td>
+      </tr>
+    </div>
+  </div>
+  <style type="text/css">
+    .battles { padding-bottom: 10px; }
+    .battle { margin: 0 20px; padding: 0px; width: calc(100% - 40px); }
+    .battle table { border-collapse: collapse; border-spacing: 0; width: 100%; height: 100%; margin: 0px; padding: 0px; border: 1px solid #000000; }
+    .battle thead { border: 1px solid #000000; }
+    .battle tr:nth-child(odd) { background-color: rgba(229, 229, 229, .8); }
+    .battle tr:nth-child(even) { background-color: rgba(255, 255, 255, .8); }
+    .sort-a, .sort-d { float: right; height: 23px; width: 23px; cursor: pointer; background-repeat: no-repeat; background-size: contain; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABmJLR0QA/wD/AP+gvaeTAAAC/ElEQVR4nO3cS4hOcRjH8e9rIlODBQuXYkLJpRRlJdlq1mQ7SlM2dmKlWCo2rGXBRpSSBZYomxErbPRmgVGmXELGZfGnJPJezvk/5/L91G8755zf89Y05/nPC5IkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkqW3WAJeAl8Ac8N38NXM/O7oIrB6o6QpaB7wmvty6ZQZYO0DflXOV+DLrmssD9N2XTtkXAN4BYxmu00RvgSVlXmBemT/8p/cZrtFUH8u+QI4PwPUM12iqG9E3UIQVwHPif5/WLV1g+QB9V9JG4A3xpdYlM6S/nhplF/CJ+HKrno/AzgE7rrz9wDfiS65qvgL7Bm63Jo4TX3RVc2yIXmujA5wnvuyq5dwwpdbNfOAm8aVXJdeAkaEaraHFwEPiy4/OA2DRkF3W1ira/Y6gC6wcusWa20baF0QPI3dmgc0F9NcIe4AvxA8lVz4Du4sorkkOEj+YXDlQUGeNc4r44ZSdk4W11UAd0nGo6CGVlQvkOYNRawuBO8QPq+jcJr3/UA+WAk+IH1pReUR676E+rAVeET+8YfMCGC+2mvbYAXwgfoiD5j2wvfBWWmYvaU0aPcx+MwdMlNBHKx0hfqD9ZqqUJlrsLPFD7TWnS+qg1UZIa9Po4f4vV8hz2rqVxoBp4of8r9wFRkt7egHpmHmX+GH/mafAshKfW7/ZRFqnRg/9Vxp5jLvqdpPWqtHDb/Qx7qqbJHb4X0nvKRToBHEfgKMZnk//0SGtWXMP/2yOh1Nv5pPWrbmG38pj3FW3mLR2LXv40/iFF5U1Tlq/ljX8Luk9hCpsO2kNW/TwZ0nvH1QDExT7dXQe466hKYr7AExmvncV5AzDD/9E9rtWYeaR1rODDt9j3A0wCtyj/+HfwmPcjbGMtK7tdfge426gLfS2Qp4B1gfdo0q2FXjGv4f/GNgQdnfKYhQ4DNwn/ePJS9JRrkPAgsD7kiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJLfcDdJvTDwc2qm0AAAAASUVORK5CYII=); }
+    .sort-d { transform: rotate(180deg); }
+  </style>
+</div>
