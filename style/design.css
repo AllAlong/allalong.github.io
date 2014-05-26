@@ -1,5 +1,18 @@
 @font-face { font-family: SBE; src: url('fonts/Swiss 721 Black Extended.ttf'); }
 @font-face { font-family: SM; src: url('fonts/Swiss 721 Medium.ttf'); }
 
-html, body { width: 100%; height: 100%; margin: 0; overflow: auto; }
-body { background-image: url('assets/aa.png'); background-repeat: no-repeat; background-position: center; background-size: contain; }
+html, body { width: 100%; height: 100%; margin: 0; overflow: auto; font-family: SM; }
+body { background-image: url('assets/aa.png'); background-repeat: no-repeat; background-position: center; background-size: 20%; }
+
+header { width: 100%; height: 75px; line-height: 75px; background-color: #646464; }
+header > nav { text-align: center; }
+header > nav > a, header > nav > a:visited { color: #FFFFFF; line-height: 75px; text-decoration: none; font-size: 22px; padding: 5px 10px;  -o-transition: .5s ease;
+  -ms-transition: .5s ease;
+  -moz-transition: .5s ease;
+  -webkit-transition: .5s ease;
+  transition: .5s ease; }
+header > nav > a:hover { color: #FFFFFF; background-color: #E84E1B; }
+
+article { width: 100%; height: calc(100% - 110px); }
+
+footer { width: 100%; height: 35px; line-height: 35px; background-color: #E84E1B; text-align: center; color: #FFFFFF; font-size: 12px; }

@@ -6,5 +6,8 @@ angular.module(app.id, ['ngRoute']).config(function($routeProvider) {
   .when('/404', {
     templateUrl: 'views/404.html'
   })
+  .when('/members', {
+    templateUrl: 'views/members.html'
+  })
   .otherwise('/404');
 });

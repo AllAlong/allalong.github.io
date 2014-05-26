@@ -14,9 +14,21 @@
     <script type="text/javascript" src="scripts/app.js"></script>
     <!-- Controllers -->
     <script type="text/javascript" src="scripts/controllers/main.js"></script>
+    <script type="text/javascript" src="scripts/controllers/members.js"></script>
   </head>
   <body ng-controller="mainController">
-    <div ng-view>
-    </div>
+    <header>
+      <nav>
+        <a href="#/">home</a>
+        <a href="#/members">members</a>
+      </nav>
+    </header>
+    <article>
+      <div ng-view>
+      </div>
+    </article>
+    <footer>
+      &copy; All Along - 2014
+    </footer>
   </body>
 </html>
