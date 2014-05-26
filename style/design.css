@@ -6,12 +6,8 @@ body {  }
 
 header { position: fixed; top: 0; width: 100%; height: 75px; line-height: 75px; background-color: #646464; }
 header > nav { text-align: center; }
-header > nav > a, header > nav > a:visited { color: #FFFFFF; line-height: 75px; text-decoration: none; font-size: 22px; padding: 5px 10px;  -o-transition: .5s ease;
-  -ms-transition: .5s ease;
-  -moz-transition: .5s ease;
-  -webkit-transition: .5s ease;
-  transition: .5s ease; }
-header > nav > a:hover { color: #FFFFFF; background-color: #E84E1B; }
+header > nav > a, header > nav > a:visited { color: #FFFFFF; line-height: 75px; text-decoration: none; font-size: 22px; padding: 5px 10px;  -o-transition: .5s ease; -ms-transition: .5s ease; -moz-transition: .5s ease; -webkit-transition: .5s ease; transition: .5s ease; }
+header > nav > a:hover, header > nav > a.true { color: #FFFFFF; background-color: #E84E1B; }
 
 article { position: fixed; top: 75px; width: 100%; height: calc(100% - 110px);  overflow: auto; background-image: url('assets/aa.png'); background-repeat: no-repeat; background-position: center; background-size: 20%; }
 
