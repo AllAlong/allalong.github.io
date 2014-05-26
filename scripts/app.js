@@ -9,6 +9,9 @@ angular.module(app.id, ['ngRoute']).config(function($routeProvider) {
   .when('/members', {
     templateUrl: 'views/members.html'
   })
+  .when('/member/:id', {
+    templateUrl: 'views/member.html'
+  })
   .when('/battles', {
     templateUrl: 'views/battles.html'
   })
