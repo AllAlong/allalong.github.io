@@ -6,14 +6,20 @@ angular.module(app.id, ['ngRoute']).config(function($routeProvider) {
   .when('/404', {
     templateUrl: 'views/404.html'
   })
+  .when('/channels', {
+    templateUrl: 'views/channels.html'
+  })
   .when('/members', {
     templateUrl: 'views/members.html'
   })
   .when('/member/:id', {
     templateUrl: 'views/member.html'
   })
-  .when('/battles', {
+  .when('/competitions', {
     templateUrl: 'views/battles.html'
+  })
+  .when('/discuss', {
+    templateUrl: 'views/discuss.html'
   })
   .otherwise('/404');
 });
