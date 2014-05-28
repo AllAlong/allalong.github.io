@@ -1,64 +1,5 @@
 [
   {
-    "date": 1401044400000,
-    "teams": [
-      {
-        "members": [
-          {
-            "name": "Saxor",
-            "count": 14
-          },
-          {
-            "name": "OLEXHANSEN",
-            "count": 16
-          },
-          {
-            "name": "LuDo",
-            "count": 19
-          },
-          {
-            "name": "Rgdz",
-            "count": 21
-          }
-        ],
-        "count": 8
-      }, {
-        "members": [
-          {
-            "name": "Nemo",
-            "count": 20
-          }, {
-            "name": "V0n0x",
-            "count": 28
-          }, {
-            "name": "Zeratul",
-            "count": 25
-          }, {
-            "name": "Urdar",
-            "count": 19
-          }
-        ],
-        "count": 8
-      }, {
-        "members": [
-          {
-            "name": "Nemesis",
-            "count": 10
-          }, {
-            "name": "Metaikone",
-            "count": 25
-          }, {
-            "name": "JudgeHerox",
-            "count": 10
-          }, {
-            "name": "SeRaPHiN",
-            "count": 25
-          }
-        ],
-        "count": 9
-      }
-    ]
-  }, {
     "date": 1401301800121,
     "teams": [
       {
@@ -126,6 +67,65 @@
           }
         ],
         "count": 0
+      }
+    ]
+  },  {
+    "date": 1401044400000,
+    "teams": [
+      {
+        "members": [
+          {
+            "name": "Saxor",
+            "count": 14
+          },
+          {
+            "name": "OLEXHANSEN",
+            "count": 16
+          },
+          {
+            "name": "LuDo",
+            "count": 19
+          },
+          {
+            "name": "Rgdz",
+            "count": 21
+          }
+        ],
+        "count": 8
+      }, {
+        "members": [
+          {
+            "name": "Nemo",
+            "count": 20
+          }, {
+            "name": "V0n0x",
+            "count": 28
+          }, {
+            "name": "Zeratul",
+            "count": 25
+          }, {
+            "name": "Urdar",
+            "count": 19
+          }
+        ],
+        "count": 8
+      }, {
+        "members": [
+          {
+            "name": "Nemesis",
+            "count": 10
+          }, {
+            "name": "Metaikone",
+            "count": 25
+          }, {
+            "name": "JudgeHerox",
+            "count": 10
+          }, {
+            "name": "SeRaPHiN",
+            "count": 25
+          }
+        ],
+        "count": 9
       }
     ]
   }
