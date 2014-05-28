@@ -1,5 +1,5 @@
 <div ng-controller="membersController" class="members">
-  <div ng-repeat="member in members" class="member">
+  <div ng-repeat="member in members | orderBy:member.name" class="member">
     <object xmlns="http://www.w3.org/1999/xhtml"
       class="member--pic"
       type="application/x-shockwave-flash"
