@@ -30,4 +30,12 @@
   "bnetMain": "http://eu.battle.net/d3/fr/profile/rgdz-2842/hero/1440963",
   "dpMain": "http://www.diabloprogress.com/hero/rgdz-2842/RgdZ/1440963",
   "summary": "the bottle does not matter as much as the drunkenness"
+}, { 
+  "id": "hendo", 
+  "name": "Hendo", 
+  "btag": "Hendo#2685", 
+  "main": "wizard-male", 
+  "bnetMain": "http://eu.battle.net/d3/fr/profile/hendo-2685/hero/36387984", 
+  "dpMain": "http://www.diabloprogress.com/hero/hendo-2685/eytucan/36387984", 
+  "summary": " Just rush it !" 
 }]
