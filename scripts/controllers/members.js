@@ -3,7 +3,7 @@ angular.module(app.id)
     $scope.members = [];
     $http({ method: 'GET', url: '././datas/members.json'})
       .success(function(datas) {
-        $scope.members = datas;
+        $scope.members = datas.sort(function(a,b) { return a.name > b.name; });
       })
       .error(function(err) {
         console.log(err);
