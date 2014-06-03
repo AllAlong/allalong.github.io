@@ -7,11 +7,11 @@
 ### Task list
 
 - Home page
-  - [ ] define content
+  - [ ] Define content
 - Members page
   - [ ] Complete members list
 - Competitions page
-  - [ ] redesign page
+  - [ ] Redesign page
 - Discuss page
-  - [ ] define content
-  - [ ] define design
+  - [ ] Define content
+  - [ ] Define design
