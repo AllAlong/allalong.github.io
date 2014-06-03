@@ -2,7 +2,7 @@
 
 ## Diablo 3 European Team
 
-[DiabloProgress](http://www.diabloprogress.com/clan/348_aa-all-along)
+[WebSite](http://allalong.eu) - [Stream](http://twitch.tv/allalongtv) - [DiabloProgress](http://www.diabloprogress.com/clan/348_aa-all-along) - [Recruitment](http://tinyurl.com/AA-recrutement)
 
 ### Task list
 
