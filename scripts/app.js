@@ -22,7 +22,7 @@ angular.module(app.id, ['ngRoute']).config(function($routeProvider) {
     templateUrl: 'views/discuss.html'
   })
   .when('/dashboard', {
-    templateUrl: 'views/dashboard.php'
+    templateUrl: 'views/dashboard.html'
   })
   .otherwise('/404');
 });
