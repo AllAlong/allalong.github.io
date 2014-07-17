@@ -21,8 +21,8 @@ angular.module(app.id, ['ngRoute']).config(function($routeProvider) {
   .when('/discuss', {
     templateUrl: 'views/discuss.html'
   })
-  .when('/schedules', {
-    templateUrl: 'views/schedules.php'
+  .when('/dashboard', {
+    templateUrl: 'views/dashboard.php'
   })
   .otherwise('/404');
 });
