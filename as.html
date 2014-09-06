@@ -17,7 +17,7 @@
     </p>
     <script type="text/javascript">
       document.onreadystatechange = function(evt) {
-        if (evt.readyState === 'complete') {
+        if (evt.currentTarget.readyState === 'complete') {
           document.getElementById('btn').addEventListener('click', function() {
             var as = document.getElementById('as').value,
               tat = document.getElementById('tat').value,
