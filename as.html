@@ -1,5 +1,7 @@
 <html>
-  <head></head>
+  <head>
+    <title>Sentry Attack Speed</title>
+  </head>
   <body>
     <p>
       Votre vitesse d'attaque : <input type="text" id="as" />
@@ -17,7 +19,7 @@
       document.addEventListener('ready', function(evt) {
         if (evt.readyState === 'complete') {
           var as = document.getElementById('as').value,
-            tat == document.getElementById('tat').value,
+            tat = document.getElementById('tat').value,
             res = as * (1 + (tat / 100));
             
           if (res >= 0 && res < 1.10205) {
