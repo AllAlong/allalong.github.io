@@ -16,7 +16,7 @@
       Vos tourelles font : <span id="res"></span> attaques par seconde.
     </p>
     <script type="text/javascript">
-      document.addEventListener('readyStateChanged', function(evt) {
+      document.onreadystatechange = function(evt) {
         if (evt.readyState === 'complete') {
           document.getElementById('btn').addEventListener('click', function() {
             var as = document.getElementById('as').value,
@@ -45,7 +45,7 @@
             document.getElementById('res').innerHTML = res;
           });
         }
-      });
+      };
     </script>
   </body>
 </html>
