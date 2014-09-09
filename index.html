@@ -1,40 +1,51 @@
-<DOCTYPE html/>
-<html lang="en" ng-app="allalong">
+<!DOCTYPE html>
+<html lang="fr" ng-app="allalong">
   <head>
-    <meta charset="utf-8" />
-    <title></title>
-    <link rel="icon" type="image/png" href="style/assets/favicon.ico">
-    <!-- Stylesheets -->
-    <link type="text/css" rel="stylesheet" href="style/design.css" />
-    <!-- Vendors -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>All Along - Diablo 3</title>
     <script type="text/javascript" src="scripts/vendors/angular.min.js"></script>
     <script type="text/javascript" src="scripts/vendors/angular-route.min.js"></script>
-    <script type="text/javascript" src="scripts/vendors/moments.min.js"></script>
-    <!-- Configuration -->
-    <script type="text/javascript" src="config.js"></script>
-    <!-- Core -->
+    <script type="text/javascript" src="scripts/controllers.js"></script>
     <script type="text/javascript" src="scripts/app.js"></script>
-    <!-- Controllers -->
-    <script type="text/javascript" src="scripts/controllers/main.js"></script>
-    <script type="text/javascript" src="scripts/controllers/members.js"></script>
-    <script type="text/javascript" src="scripts/controllers/battles.js"></script>
+    <script type="text/javascript" src="scripts/prototype.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="design/pure.min.css" />
+    <link type="text/css" rel="stylesheet" href="design/pure-theme.min.css" />
+    <link type="text/css" rel="stylesheet" href="design/style.css" />
   </head>
-  <body ng-controller="mainController">
-    <header>
-      <nav>
-        <a href="#/" class="{{ homeActive }}">home</a>
-        <a href="#/channels" class="{{ channelsActive }}">channels</a>
-        <a href="#/members" class="{{ membersActive }}">members</a>
-        <a href="#/forum" class="{{ ForumActive }}">forum</a>
-        <a href="dashboard" class="{{ dashboardActive }}">dashboard</a>
-      </nav>
-    </header>
-    <article>
-      <div ng-view>
+  <body ng-controller="mainController as main">
+    <div class="pure-g">
+      <div class="pure-u-2-24"></div>
+      <div class="pure-u-22-24">
+        <div class="pure-menu pure-menu-open pure-menu-horizontal">
+          <a href="#/" class="pure-menu-heading">All Along</a>
+          <ul>
+            <li class="">
+              <a href="#/">{{ main.labels.home[main.locale].upperCaseFirst() }}</a>
+            </li>
+            <li class="">
+              <a href="#/sentry_as">{{ main.labels.sentryAsMenu[main.locale].upperCaseFirst() }}</a>
+            </li>
+            <li class="">
+              <a ng-href="{{ 'https://docs.google.com/forms/d/' + ((main.locale === 'en') ? '1rHjtoJ4kzKDY38yRFj3skunVHTTNyErEITx53l7vsFU' : '17z5K0Lhts9r4AL0fE2kM7fe1VNnnQ2dbdiwZb203VPI') + '/viewform' }}" target="_blank">{{ main.labels.recruitment[main.locale].upperCaseFirst() }}</a>
+            </li>
+            <li class="">
+              <a href="http://dashboard.allalong.eu" target="_blank">{{ main.labels.dashboard[main.locale].upperCaseFirst() }}</a>
+            </li>
+            <li class="">
+              <a href="https://docs.google.com/spreadsheet/ccc?key=0AilMAE0hGCBndGloU3IyRFhwSWJXMmI4SnJzTjR2Vnc&usp=drive_web#gid=0" target="_blank">{{ main.labels.events[main.locale].upperCaseFirst() }}</a>
+            </li>
+            <li class="" ng-repeat="loc in main.locales">
+              <a href="javascript:void(0);" ng-click="main.locale = loc">{{ loc }}</a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="container" ng-view>
+
+        </div>
       </div>
-    </article>
-    <footer>
-      &copy; All Along - 2014
-    </footer>
+      <div class="pure-u-2-24"></div>
+    </div>
   </body>
 </html>

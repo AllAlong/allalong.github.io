@@ -1,0 +1,7 @@
+{
+  "name": "allalong",
+  "version": "0.0.2",
+  "devDependencies": {
+    "express": "latest"
+  }
+}
