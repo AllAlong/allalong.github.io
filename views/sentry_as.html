@@ -1,0 +1,21 @@
+<div class="pure-u-1 pure-g">
+  <div class="pure-u-1-5"></div>
+  <div class="pure-u-2-5">
+    <div class="pure-form pure-form-stacked">
+        <fieldset>
+            <legend>{{ main.labels.sentryAsTitle[main.locale].upperCaseFirst() }}</legend>
+
+            <label for="as">{{ main.labels.currentAs[main.locale].upperCaseFirst() }}</label>
+            <input id="as" type="number" ng-model="sentryAs.currentAS" min="0" max="5" step="0.01" ng-change="sentryAs.calcul()" />
+
+            <label for="bonus">{{ main.labels.taskerBonus[main.locale].upperCaseFirst() }}</label>
+            <input id="bonus" type="number" ng-model="sentryAs.taskerBonus" min="40" max="50" step="1" ng-change="sentryAs.calcul()" />
+
+            <button class="pure-button pure-button-primary" ng-click="sentryAs.calcul()">{{ main.labels.calculate[main.locale].upperCaseFirst() }}</button>
+
+            <p>{{ main.labels.sentryResult[main.locale].upperCaseFirst() }}&nbsp;:&nbsp;{{ sentryAs.result }}%</p>
+        </fieldset>
+    </div>
+  </div>
+  <div class="pure-u-1-5"></div>
+</div>
