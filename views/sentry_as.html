@@ -9,7 +9,7 @@
             <input id="as" type="number" ng-model="sentryAs.currentAS" min="0" max="5" step="0.01" ng-change="sentryAs.calcul()" />
 
             <label for="bonus">{{ main.labels.taskerBonus[main.locale].upperCaseFirst() }}</label>
-            <input id="bonus" type="number" ng-model="sentryAs.taskerBonus" min="40" max="50" step="1" ng-change="sentryAs.calcul()" />
+            <input id="bonus" type="number" ng-model="sentryAs.taskerBonus" min="0" max="50" step="1" ng-change="sentryAs.calcul()" />
 
             <button class="pure-button pure-button-primary" ng-click="sentryAs.calcul()">{{ main.labels.calculate[main.locale].upperCaseFirst() }}</button>
 
